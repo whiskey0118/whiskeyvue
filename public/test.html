@@ -1,31 +1,28 @@
-<el-form :inline="true" :model="formInline" class="demo-form-inline">
-    <el-form-item label="审批人">
-        <el-input v-model="formInline.user" placeholder="审批人"></el-input>
-    </el-form-item>
-    <el-form-item label="活动区域">
-        <el-select v-model="formInline.region" placeholder="活动区域">
-            <el-option label="区域一" value="shanghai"></el-option>
-            <el-option label="区域二" value="beijing"></el-option>
-        </el-select>
-    </el-form-item>
-    <el-form-item>
-        <el-button type="primary" @click="onSubmit">查询</el-button>
-    </el-form-item>
-</el-form>
+<!--<h1 id="a">Hello</h1>-->
+<!--<input type="text" id="a" />-->
+
 <script>
-    export default {
-        data() {
-            return {
-                formInline: {
-                    user: '',
-                    region: ''
-                }
-            }
-        },
-        methods: {
-            onSubmit() {
-                console.log('submit!');
-            }
-        }
-    }
+    // var input = document.getElementById("a"),
+    //     title = document.getElementById("title");
+    //
+    // input.oninput = function (e) {
+    //     title.innerHTML = this.value;
+    // }
+    //
+    // input.value='123123123123';
+    // title.innerHTML=input.value;
+    var b=[111,'what','the'];
+
+    var sayings = new Map();
+    sayings.set('dog', 'woof');
+    sayings.set('cat', 'meow');
+
+    console.log(b[1],typeof(b));
+    console.log(sayings.get('dog'),typeof(sayings))
+function a() {
+        null
+}
+
+console.log(typeof a)
+
 </script>
