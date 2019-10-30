@@ -1,4 +1,6 @@
 <template>
     <div>hahahah</div>
 </template>
-<script></script>
+<script>
+
+</script>
