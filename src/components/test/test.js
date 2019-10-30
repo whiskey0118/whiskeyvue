@@ -1,8 +1,15 @@
 
 var haha=123;
 
-export default function() {
-    console.log('hahah')
+export default  {
+    data(){
+        return{
+            test: 12345
+        }
+    },
+    methods:{
+
+    }
 }
 
 
