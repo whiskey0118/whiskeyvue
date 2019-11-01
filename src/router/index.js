@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-import Foo from '@/components/Foo'
+import Login from '@/components/Login'
 import Test from '@/components/Test'
 import Test2 from '@/components/test/Test2'
+import Main from '@/components/Main'
 
 Vue.use(Router)
 
@@ -16,10 +17,16 @@ export default new Router({
             component: Hello
         },
         {
-            path: '/foo',
-            name: 'foo',
+            path: '/',
+            name: '首页',
             hidden: true,
-            component: Foo
+            component: Main
+        },
+        {
+            path: '/login',
+            name: 'login',
+            hidden: true,
+            component: Login
         },
         {
             path: '/test',
