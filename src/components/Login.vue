@@ -9,7 +9,7 @@
         </el-form-item>
         <el-checkbox class="login_remember" v-model="checked" label-position="left">记住密码</el-checkbox>
         <el-form-item style="width: 100%">
-            <el-button type="primary" @click.native.prevent="submitClick" style="width: 100%">登录</el-button>
+            <el-button type="primary" v-on:click="checkTest()" style="width: 100%">登录</el-button>
         </el-form-item>
     </el-form>
 </template>
@@ -27,6 +27,11 @@
                     password: 'test'
                 },
                 loading: false
+            }
+        },
+        methods: {
+            checkTest() {
+                alert('haha! You\'re ' + 'a sb.');
             }
         }
 
