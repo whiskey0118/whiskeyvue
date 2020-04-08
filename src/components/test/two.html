@@ -1,6 +1,45 @@
-<script>
-    import test from './test'
+<html>
+<head>
+    <title>funny</title>
+</head>
 
-    test();
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app" style="width: 100%;height: auto;font-size:20px;">
+    <p id="id1"></p>
+    <p id="id2"></p>
+</div>
+
+<script>
+    var message = "Hello!";
+    var app = new Vue({
+        el:"#app",
+        data:{
+            message: "thanks"
+        },
+        created: function() {
+            this.showMessage1();    //this 1
+            this.showMessage2();   //this 2
+        },
+        methods:{
+            showMessage1:function(){
+                setTimeout(function() {
+                    document.getElementById("id1").innerText = this.message;  //this 3
+                }, 10)
+            },
+            showMessage2:function() {
+                setTimeout(() => {
+                    document.getElementById("id2").innerText = this.message;  //this 4
+                }, 10)
+            }
+        }
+    });
+
 </script>
+
+
+
+</body>
+
+</html>
 

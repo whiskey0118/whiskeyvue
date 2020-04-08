@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import Login from '@/components/Login'
 import Test from '@/components/Test'
-import Test2 from '@/components/test/Test2'
+import Foo from '@/components/Foo'
 import Main from '@/components/Main'
 
 Vue.use(Router)
@@ -35,10 +35,10 @@ export default new Router({
             component: Test
         },
         {
-            path: '/test2',
-            name: 'test2',
+            path: '/foo',
+            name: 'foo',
             hidden: true,
-            component: Test2
+            component: Foo
         },
 
     ]
